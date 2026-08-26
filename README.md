@@ -1,56 +1,56 @@
-# Codebase Intelligence System
+# repochat - codebase intelligence system
 
-A RAG-based tool that lets you ask natural-language questions about a software repository and get answers grounded in the actual code, with file and line citations.
+a rag based tool that lets you ask natural-language questions about a software repository and get answers grounded in the actual code, with file and line citations.
 
-Built to run on a laptop with **8GB RAM and no GPU**, using **Gemini API** for LLM inference and local embeddings for retrieval.
+built to run on a laptop with **8GB RAM and no GPU**, using **Gemini API** for LLM inference and local embeddings for retrieval.
 
 ---
 
 ## Features
 
-* Repository indexing
-* Structure-aware code chunking
-* Local code embeddings with `all-MiniLM-L6-v2`
-* Persistent vector storage with ChromaDB
-* Semantic code search
-* Gemini-powered answers
-* File and line-level citations
-* Supports Python, JavaScript, TypeScript, Java, Go, C/C++, and Rust
+* repository indexing
+* structure-aware code chunking
+* local code embeddings with `all-MiniLM-L6-v2`
+* persistent vector storage with ChromaDB
+* semantic code search
+* gemini-powered answers
+* file and line-level citations
+* supports python, javascript, typescript, java, go, c/c++ and rust
 
 ---
 
 ## Architecture
 
 ```text
-Repository
+repository
      │
      ▼
-File Scanner
+file scanner
      │
      ▼
-Code Chunker
+code chunker
      │
      ▼
-Local Embeddings
+local embeddings
      │
      ▼
-ChromaDB
+chromaDB
      │
      ▼
-Vector Search
+vector search
      │
      ▼
-Gemini
+gemini
      │
      ▼
-Answer + Citations
+answer + citations
 ```
 
 ---
 
-## Tech Stack
+## tech stack
 
-| Component       | Technology            |
+| component       | technology            |
 | --------------- | --------------------- |
 | Backend         | FastAPI               |
 | Frontend        | Streamlit             |
@@ -89,14 +89,14 @@ codebase-intelligence/
 
 ## Setup
 
-### 1. Clone the repository
+### 1. clone the repository
 
 ```bash
 git clone <your-repo-url>
 cd codebase-intelligence
 ```
 
-### 2. Create a virtual environment
+### 2. create a virtual environment
 
 **Windows**
 
@@ -105,20 +105,13 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-**Linux / macOS**
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
+### 3. install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure Gemini
+### 4. configure gemini
 
 Create an API key from [Google AI Studio](https://aistudio.google.com/apikey).
 
@@ -130,54 +123,35 @@ GEMINI_API_KEY=your_api_key_here
 
 ---
 
-## Run
+## run
 
-Start the backend:
+start the backend:
 
 ```bash
 python run.py
 ```
 
-Start the frontend in another terminal:
+start the frontend in another terminal:
 
 ```bash
 streamlit run frontend/app.py
 ```
 
-Open the Streamlit interface and enter the path of the repository you want to analyze.
+open the streamlit interface and enter the path of the repository you want to analyze.
 
 ---
 
-## Example
-
-**Question**
-
-```text
-Where is authentication implemented?
-```
-
-**Response**
-
-```text
-Authentication is implemented in the auth module,
-where user credentials are validated and tokens are generated.
-
-Citations:
-src/auth.py:12-38
-```
-
----
 
 ## Current Scope — Phase 1
 
 Phase 1 focuses on the core RAG pipeline:
 
-* Vector-based retrieval
-* Heuristic structural chunking
-* Local embeddings
-* ChromaDB storage
-* Gemini-based generation
-* Code citations
+* vector-based retrieval
+* heuristic structural chunking
+* local embeddings
+* chromaDB storage
+* gemini-based generation
+* code citations
 
 ### Limitations
 
@@ -193,33 +167,27 @@ Phase 1 focuses on the core RAG pipeline:
 
 ### Phase 2
 
-* Tree-sitter based code parsing
-* Hybrid BM25 + vector retrieval
-* Improved citations
-* Better code metadata
+* tree-sitter based code parsing
+* hybrid BM25 + vector retrieval
+* improved citations
+* better code metadata
 
 ### Phase 3
 
-* Dependency graph
-* Function and class relationships
-* Impact analysis
+* dependency graph
+* function and class relationships
+* impact analysis
 
 ### Phase 4
 
-* Incremental indexing
-* File hashing
-* Git-aware retrieval
+* incremental indexing
+* file hashing
+* git-aware retrieval
 
 ### Phase 5
 
-* Automated evaluation
-* Recall@5
-* Citation accuracy
-* Faithfulness
-* Latency benchmarking
+* automated evaluation
+* recall@5
+* citation accuracy
+* latency benchmarking
 
----
-
-## License
-
-MIT License
