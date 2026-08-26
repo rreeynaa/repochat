@@ -11,6 +11,3 @@ Intelligence System. It has:
 - Two intentional bugs, for testing the "find potential bugs" feature:
   1. `hash_password` uses no per-user salt (see docstring).
   2. `get_connection` does not handle connection failures (see docstring).
-
-Point the Codebase Intelligence System at this folder to try it out before
-using it on a real project.
