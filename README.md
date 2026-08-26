@@ -6,7 +6,7 @@ built to run on a laptop with **8GB RAM and no GPU**, using **Gemini API** for L
 
 ---
 
-## Features
+## features
 
 * repository indexing
 * structure-aware code chunking
@@ -19,7 +19,7 @@ built to run on a laptop with **8GB RAM and no GPU**, using **Gemini API** for L
 
 ---
 
-## Architecture
+## architecture
 
 ```text
 repository
@@ -52,12 +52,12 @@ answer + citations
 
 | component       | technology            |
 | --------------- | --------------------- |
-| Backend         | FastAPI               |
-| Frontend        | Streamlit             |
-| LLM             | Gemini API            |
-| Embeddings      | Sentence Transformers |
-| Vector Database | ChromaDB              |
-| Language        | Python                |
+| backend         | fastAPI               |
+| frontend        | streamlit             |
+| LLM             | gemini api            |
+| embeddings      | sentence transformers |
+| vector database | chromaDB              |
+| language        | python                |
 
 ---
 
@@ -87,18 +87,18 @@ codebase-intelligence/
 
 ---
 
-## Setup
+## setup
 
 ### 1. clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd codebase-intelligence
+git clone "https://github.com/rreeynaa/repochat"
+cd repochat
 ```
 
 ### 2. create a virtual environment
 
-**Windows**
+**windows**
 
 ```bash
 python -m venv .venv
@@ -142,9 +142,9 @@ open the streamlit interface and enter the path of the repository you want to an
 ---
 
 
-## Current Scope — Phase 1
+## current scope —> phase 1
 
-Phase 1 focuses on the core RAG pipeline:
+phase 1 focuses on the core RAG pipeline:
 
 * vector-based retrieval
 * heuristic structural chunking
@@ -153,38 +153,38 @@ Phase 1 focuses on the core RAG pipeline:
 * gemini-based generation
 * code citations
 
-### Limitations
+### limitations
 
-* No hybrid BM25 + vector retrieval
-* No dependency graph
-* No impact analysis
-* No incremental indexing
-* No Git awareness
+* no hybrid BM25 + vector retrieval
+* no dependency graph
+* no impact analysis
+* no incremental indexing
+* no Git awareness
 
 ---
 
-## Roadmap
+## roadmap
 
-### Phase 2
+### phase 2
 
 * tree-sitter based code parsing
 * hybrid BM25 + vector retrieval
 * improved citations
 * better code metadata
 
-### Phase 3
+### phase 3
 
 * dependency graph
 * function and class relationships
 * impact analysis
 
-### Phase 4
+### phase 4
 
 * incremental indexing
 * file hashing
 * git-aware retrieval
 
-### Phase 5
+### phase 5
 
 * automated evaluation
 * recall@5
