@@ -1,6 +1,5 @@
-This project is being built incrementally, following a versioned development roadmap.
 
-![version](https://img.shields.io/badge/version-v0.4-blue) ![status](https://img.shields.io/badge/status-active%20development-yellow)
+![version](https://img.shields.io/badge/version-v1.0.0-blue) ![status](https://img.shields.io/badge/status-active%20development-yellow)
 
 # repochat - codebase intelligence system
 
@@ -65,7 +64,7 @@ answer + citations
 
 ---
 
-## Project Structure
+## project structure
 
 ```text
 codebase-intelligence/
