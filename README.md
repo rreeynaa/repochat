@@ -1,5 +1,5 @@
 
-![version](https://img.shields.io/badge/version-v1.0.0-blue) ![status](https://img.shields.io/badge/status-active%20development-yellow)
+![version](https://img.shields.io/badge/version-v0.4-blue) ![status](https://img.shields.io/badge/status-active%20development-yellow)
 
 # repochat - codebase intelligence system
 
