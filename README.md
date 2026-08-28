@@ -1,3 +1,7 @@
+This project is being built incrementally, following a versioned development roadmap.
+
+![version](https://img.shields.io/badge/version-v0.4-blue) ![status](https://img.shields.io/badge/status-active%20development-yellow)
+
 # repochat - codebase intelligence system
 
 a rag based tool that lets you ask natural-language questions about a software repository and get answers grounded in the actual code, with file and line citations.
